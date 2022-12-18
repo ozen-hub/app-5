@@ -8,9 +8,9 @@
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane prefHeight="356.0" prefWidth="363.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginFormController">
    <children>
@@ -36,8 +36,17 @@
          </cursor>
       </Button>
       <CheckBox fx:id="cmbRememberMe" layoutX="25.0" layoutY="151.0" mnemonicParsing="false" text="Remember me" />
-      <RadioButton layoutX="25.0" layoutY="192.0" mnemonicParsing="false" text="Admin" />
-      <RadioButton layoutX="96.0" layoutY="192.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" text="User" />
+      <RadioButton layoutX="88.0" layoutY="192.0" mnemonicParsing="false" text="Admin">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <toggleGroup>
+            <ToggleGroup fx:id="userType" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rBtnUser" layoutX="26.0" layoutY="192.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="56.0" selected="true" text="User" toggleGroup="$userType">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></RadioButton>
       <Button layoutX="26.0" layoutY="294.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="312.0" text="Create an Account">
          <cursor>
             <Cursor fx:constant="HAND" />
