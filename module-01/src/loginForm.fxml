@@ -20,17 +20,17 @@
          </font>
       </Label>
       <Separator layoutX="25.0" layoutY="41.0" prefHeight="0.0" prefWidth="312.0" />
-      <TextField layoutX="25.0" layoutY="66.0" prefHeight="25.0" prefWidth="312.0" promptText="username">
+      <TextField fx:id="txtUserName" layoutX="25.0" layoutY="66.0" prefHeight="25.0" prefWidth="312.0" promptText="username">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </TextField>
-      <PasswordField layoutX="25.0" layoutY="111.0" prefHeight="29.0" prefWidth="312.0" promptText="Password">
+      <PasswordField fx:id="txtPassword" layoutX="25.0" layoutY="111.0" prefHeight="29.0" prefWidth="312.0" promptText="Password">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </PasswordField>
-      <Button layoutX="26.0" layoutY="227.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="312.0" text="Login">
+      <Button layoutX="26.0" layoutY="227.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="38.0" prefWidth="312.0" text="Login">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
